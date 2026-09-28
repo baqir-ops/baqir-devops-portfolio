@@ -1,0 +1,13 @@
+# Editor / OS files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary backup files
+*.backup
+*.before-*
+
+# Local development
+.vscode/
+.idea/
