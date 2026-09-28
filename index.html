@@ -268,56 +268,43 @@
         <article class="project">
           <div class="project-meta">
             <span>02</span>
-            <span>KUBERNETES · AWS</span>
+            <span>KUBERNETES · AWS · CI/CD</span>
           </div>
+
           <img class="project-image"
-  src="images/eks-helm.png"
-  alt="Flask application deployed on EKS with Helm">
+               src="images/eks-helm.png"
+               alt="Flask application deployed on Amazon EKS with Helm">
 
-<h3>Flask App on EKS with Helm CI/CD</h3>
+          <h3>Flask Application — Minikube → EKS with Helm, HPA &amp; CI/CD</h3>
+
           <p>
-            Migrated a containerized Flask application from Minikube to AWS
-            EKS using Helm, ECR, health probes, HPA and NGINX Ingress.
-            Automated image builds, ECR publishing and Helm deployment with
-            GitHub Actions.
+            Evolved a containerized Flask application from local Minikube to
+            Amazon EKS using Helm, ECR, NGINX Ingress, health probes and
+            Kubernetes HPA. Automated image builds, ECR publishing and Helm
+            deployments with GitHub Actions across development and production
+            environments.
           </p>
-          <div class="project-tags">
-            <span>Docker</span>
-            <span>EKS</span>
-            <span>Helm</span>
-            <span>ECR</span>
-            <span>HPA</span>
-          </div>
-          <a href="https://github.com/baqir-ops/flask-eks-hpa"
-             target="_blank" rel="noreferrer">View project ↗</a>
-        </article>
 
-        <article class="project">
-          <div class="project-meta">
-            <span>03</span>
-            <span>KUBERNETES · CI/CD</span>
-          </div>
-          <img class="project-image"
-  src="images/eks-hpa.png"
-  alt="Flask on Kubernetes with HPA and CI/CD">
-
-<h3>Flask on Kubernetes with HPA &amp; CI/CD</h3>
-          <p>
-            Containerized a Flask application with a multi-stage non-root
-            Dockerfile and deployed it to Kubernetes with liveness and
-            readiness probes behind NGINX Ingress. Configured HPA for
-            CPU-based scaling and automated delivery with GitHub Actions.
+          <p class="project-result">
+            <strong>Result:</strong> Demonstrated HPA scaling from 2–6 pods in
+            development and 3–10 pods in production, with commit-SHA image
+            tagging and Helm-based rollback.
           </p>
+
           <div class="project-tags">
             <span>Docker</span>
             <span>Kubernetes</span>
-            <span>Ingress</span>
+            <span>EKS</span>
+            <span>Helm</span>
             <span>HPA</span>
             <span>GitHub Actions</span>
           </div>
+
           <a href="https://github.com/baqir-ops/flask-eks-hpa"
              target="_blank" rel="noreferrer">View project ↗</a>
         </article>
+
+
 
         <article class="project">
           <div class="project-meta">
@@ -356,19 +343,20 @@
 
 <h3>AWS Infrastructure as Code with Terraform</h3>
           <p>
-            Provisioned EC2, security groups, key pairs and VPC components
-            using Terraform variables, outputs, providers and data sources.
-            Built reusable modules and configured S3 remote state with
-            DynamoDB locking.
+            Provisioned an AWS VPC, public subnet, Internet Gateway,
+            route table, security group, key pair and Ubuntu 24.04 EC2
+            instance with Docker using Terraform variables, outputs,
+            providers and data sources. Verified the provisioned server
+            through SSH and Docker.
           </p>
           <div class="project-tags">
             <span>Terraform</span>
-            <span>VPC</span>
+            <span>AWS VPC</span>
             <span>EC2</span>
-            <span>S3</span>
-            <span>DynamoDB</span>
+            <span>Docker</span>
+            <span>IaC</span>
           </div>
-          <a href="https://github.com/baqir-ops"
+          <a href="https://github.com/baqir-ops/terraform-aws-infrastructure-lab"
              target="_blank" rel="noreferrer">View project ↗</a>
         </article>
 
